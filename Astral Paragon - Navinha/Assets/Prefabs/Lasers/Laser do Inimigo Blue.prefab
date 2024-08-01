@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5451877079810058157}
   - component: {fileID: 3827838471174556323}
   - component: {fileID: 531834815810124540}
+  - component: {fileID: 8229653375029111137}
+  - component: {fileID: -6896555636935725984}
   m_Layer: 0
   m_Name: Laser do Inimigo Blue
   m_TagString: Untagged
@@ -120,3 +122,29 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.36609197, y: 0.57528734}
   m_Direction: 0
+--- !u!114 &8229653375029111137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528585674864671915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b87859deea920488fee287c8343cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeDoLaser: 12
+--- !u!114 &-6896555636935725984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528585674864671915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d207392eb551114db1358833349ee5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoDeVida: 2.5

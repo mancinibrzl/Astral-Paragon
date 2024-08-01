@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7268710106907777296}
   - component: {fileID: 1419715569560947118}
   - component: {fileID: -6288247714578877538}
+  - component: {fileID: 6726309194673544762}
   m_Layer: 0
   m_Name: Laser do Jogador
   m_TagString: Untagged
@@ -134,3 +135,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoLaser: 10
+--- !u!114 &6726309194673544762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3813589584826000746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d207392eb551114db1358833349ee5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoDeVida: 2.5

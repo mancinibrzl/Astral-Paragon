@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3110754802530661579}
   - component: {fileID: 8568295494407219176}
   - component: {fileID: 980839355940159782}
+  - component: {fileID: 540711798317643220}
+  - component: {fileID: 8734551505135405255}
   m_Layer: 0
   m_Name: Laser do Inimigo Green
   m_TagString: Untagged
@@ -120,3 +122,29 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.24787739
+--- !u!114 &540711798317643220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254107378758700777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b87859deea920488fee287c8343cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidadeDoLaser: 10
+--- !u!114 &8734551505135405255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254107378758700777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d207392eb551114db1358833349ee5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoDeVida: 2.5
