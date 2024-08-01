@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &287856060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287856061}
+  m_Layer: 0
+  m_Name: Local do Disparo Inimigo Verde
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &287856061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287856060}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.01000012, y: -0.96000016, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 294962390}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294962386
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +300,8 @@ Transform:
   m_LocalPosition: {x: 7.32, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 287856061}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &294962391
@@ -284,7 +316,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1d49607f0deb743a8ff1679b298f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 5254107378758700777, guid: cda51017d682a33498035cb6d256d2ea, type: 3}
+  localDoDisparo: {fileID: 287856061}
   velocidadeDoInimigo: 8
+  tempoMaximoEntreOsLasers: 0.5
+  tempoAtualDosLasers: 0
+  inimigoAtirador: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +591,8 @@ Transform:
   m_LocalPosition: {x: 7.32, y: 3.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1321092859}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &1063231657
@@ -569,7 +607,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1d49607f0deb743a8ff1679b298f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 528585674864671915, guid: 5f9fe1050ec42cb419100611cc5f560b, type: 3}
+  localDoDisparo: {fileID: 1321092859}
   velocidadeDoInimigo: 10
+  tempoMaximoEntreOsLasers: 1
+  tempoAtualDosLasers: 0
+  inimigoAtirador: 1
 --- !u!1 &1086783310
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +780,37 @@ MonoBehaviour:
   localDoDisparoUnico: {fileID: 850405990}
   velocidadeDaNave: 10
   temLaserDuplo: 0
+--- !u!1 &1321092858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1321092859}
+  m_Layer: 0
+  m_Name: Local do Disparo Inimigo Azul
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1321092859
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321092858}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.005000234, y: -1.0290004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1063231656}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2143731054
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +972,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1d49607f0deb743a8ff1679b298f0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserDoInimigo: {fileID: 0}
+  localDoDisparo: {fileID: 0}
   velocidadeDoInimigo: 20
+  tempoMaximoEntreOsLasers: 0
+  tempoAtualDosLasers: 0
+  inimigoAtirador: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
