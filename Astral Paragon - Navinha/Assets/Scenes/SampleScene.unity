@@ -626,9 +626,10 @@ GameObject:
   - component: {fileID: 1086783313}
   - component: {fileID: 1086783314}
   - component: {fileID: 1086783315}
+  - component: {fileID: 1086783316}
   m_Layer: 0
   m_Name: Nave do Jogador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,6 +781,21 @@ MonoBehaviour:
   localDoDisparoUnico: {fileID: 850405990}
   velocidadeDaNave: 10
   temLaserDuplo: 0
+--- !u!114 &1086783316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086783310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05aa1360afad7b4e8c855a089120141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMaximaDoJogador: 10
+  vidaAtualDoJogador: 0
+  temEscudo: 0
 --- !u!1 &1321092858
 GameObject:
   m_ObjectHideFlags: 0
