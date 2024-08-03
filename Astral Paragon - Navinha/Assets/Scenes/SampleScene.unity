@@ -1140,7 +1140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b05aa1360afad7b4e8c855a089120141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMaximaDoJogador: 10
+  barraDeVidaDoJogador: {fileID: 775293002}
+  vidaMaximaDoJogador: 20
   vidaAtualDoJogador: 0
   temEscudo: 0
 --- !u!1 &1197069035
