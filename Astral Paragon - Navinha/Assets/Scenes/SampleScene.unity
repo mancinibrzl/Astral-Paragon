@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 294962391}
   m_Layer: 0
   m_Name: Green Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,6 +322,8 @@ MonoBehaviour:
   tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
+  vidaMaximaDoInimigo: 3
+  vidaAtualDoInimigo: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,7 +462,7 @@ GameObject:
   - component: {fileID: 1063231657}
   m_Layer: 0
   m_Name: Blue Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -613,6 +615,8 @@ MonoBehaviour:
   tempoMaximoEntreOsLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
+  vidaMaximaDoInimigo: 4
+  vidaAtualDoInimigo: 0
 --- !u!1 &1086783310
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +846,7 @@ GameObject:
   - component: {fileID: 2143731059}
   m_Layer: 0
   m_Name: Purple Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -994,6 +998,8 @@ MonoBehaviour:
   tempoMaximoEntreOsLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
+  vidaMaximaDoInimigo: 1
+  vidaAtualDoInimigo: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
