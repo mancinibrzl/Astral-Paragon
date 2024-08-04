@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    public Text textoDePontuacaoAtual;
 
     public int pontuacaoAtual;
 
@@ -18,6 +21,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         pontuacaoAtual = 0;
+        textoDePontuacaoAtual.text = "PONTUAÇÃO: " + pontuacaoAtual;
     }
 
     // Update is called once per frame
@@ -29,5 +33,6 @@ public class GameManager : MonoBehaviour
     public void AumentarPontuacao(int pontosParaGanhar)
     {
         pontuacaoAtual += pontosParaGanhar;
+        textoDePontuacaoAtual.text = "PONTUAÇÃO: " + pontuacaoAtual;
     }
 }
