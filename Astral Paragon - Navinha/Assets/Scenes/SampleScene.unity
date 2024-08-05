@@ -1244,7 +1244,7 @@ MonoBehaviour:
   velocidadeDaNave: 10
   tempoMaximoDosLasersDuplos: 10
   tempoAtualDosLasersDuplos: 0
-  temLaserDuplo: 0
+  temLaserDuplo: 1
 --- !u!114 &1086783316
 MonoBehaviour:
   m_ObjectHideFlags: 0
