@@ -7,8 +7,12 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D oRigidBody2D;
     public GameObject laserDoJogador;
     public Transform localDoDisparoUnico;
+    public Transform localDoDisparoDaEsquerda;
+    public Transform localDoDisparoDaDireita;
     
     public float velocidadeDaNave;
+    public float tempoMaximoDosLasersDuplos;
+    public float tempoAtualDosLasersDuplos;
 
     public bool temLaserDuplo;
 
@@ -18,6 +22,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         temLaserDuplo = false;
+        tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
     }
 
     // Update is called once per frame
@@ -25,6 +30,16 @@ public class PlayerController : MonoBehaviour
     {
         MovimentarJogador();
         AtirarLaser();
+
+        if (temLaserDuplo == true)
+        {
+            tempoAtualDosLasersDuplos -= Time.deltaTime;
+            
+            if (tempoAtualDosLasersDuplos <= 0)
+            {
+                DesativarLaserDuplo();
+            }
+        }
     }
 
     private void MovimentarJogador()
@@ -41,6 +56,17 @@ public class PlayerController : MonoBehaviour
             {
                 Instantiate(laserDoJogador, localDoDisparoUnico.position, localDoDisparoUnico.rotation);
             }
+            else
+            {
+                Instantiate(laserDoJogador, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
+                Instantiate(laserDoJogador, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
+            }
         }
+    }
+
+    private void DesativarLaserDuplo()
+    {
+        temLaserDuplo = false;
+        tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
     }
 }
