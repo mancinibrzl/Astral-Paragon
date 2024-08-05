@@ -1190,8 +1190,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barraDeVidaDoJogador: {fileID: 775293002}
+  escudoDoJogador: {fileID: 1713320588}
   vidaMaximaDoJogador: 20
   vidaAtualDoJogador: 0
+  vidaMaximaDoEscudo: 5
+  vidaAtualDoEscudo: 5
   temEscudo: 0
 --- !u!1 &1197069035
 GameObject:
