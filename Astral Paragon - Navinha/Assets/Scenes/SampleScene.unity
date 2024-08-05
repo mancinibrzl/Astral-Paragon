@@ -1239,7 +1239,11 @@ MonoBehaviour:
   oRigidBody2D: {fileID: 1086783314}
   laserDoJogador: {fileID: 3813589584826000746, guid: 4bb6cbf76070d5b479705f557bffeeca, type: 3}
   localDoDisparoUnico: {fileID: 850405990}
+  localDoDisparoDaEsquerda: {fileID: 336263307}
+  localDoDisparoDaDireita: {fileID: 691286882}
   velocidadeDaNave: 10
+  tempoMaximoDosLasersDuplos: 10
+  tempoAtualDosLasersDuplos: 0
   temLaserDuplo: 0
 --- !u!114 &1086783316
 MonoBehaviour:
