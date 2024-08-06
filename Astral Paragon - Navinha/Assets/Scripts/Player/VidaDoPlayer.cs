@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class VidaDoPlayer : MonoBehaviour
 {
     public Slider barraDeVidaDoJogador;
-    public GameObject escudoDoJogador;
+    public Slider barraDeEnergiaDoEscudo;
 
+    public GameObject escudoDoJogador;
+    
     public int vidaMaximaDoJogador;
     public int vidaAtualDoJogador;
     public int vidaMaximaDoEscudo;
@@ -24,6 +26,12 @@ public class VidaDoPlayer : MonoBehaviour
         barraDeVidaDoJogador.maxValue = vidaMaximaDoJogador;
         barraDeVidaDoJogador.value = vidaAtualDoJogador;
 
+        barraDeEnergiaDoEscudo.maxValue = vidaMaximaDoEscudo;
+        barraDeEnergiaDoEscudo.value = vidaAtualDoEscudo;
+
+        barraDeEnergiaDoEscudo.gameObject.SetActive(false);
+
+
         escudoDoJogador.SetActive(false);
         temEscudo = false;
     }
@@ -36,7 +44,11 @@ public class VidaDoPlayer : MonoBehaviour
 
     public void AtivarEscudo()
     {
+        barraDeEnergiaDoEscudo.gameObject.SetActive(true);
+        
         vidaAtualDoEscudo = vidaMaximaDoEscudo;
+
+        barraDeEnergiaDoEscudo.value = vidaAtualDoEscudo;
 
         escudoDoJogador.SetActive(true);
         temEscudo = true;
@@ -71,11 +83,13 @@ public class VidaDoPlayer : MonoBehaviour
         else
         {
             vidaAtualDoEscudo -= danoParaReceber;
+            barraDeEnergiaDoEscudo.value = vidaAtualDoEscudo;
             
             if (vidaAtualDoEscudo <= 0)
             {
                 escudoDoJogador.SetActive(false);
                 temEscudo = false;
+                barraDeEnergiaDoEscudo.gameObject.SetActive(false);
             }
         }
     }
