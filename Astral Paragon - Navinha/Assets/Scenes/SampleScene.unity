@@ -1845,6 +1845,177 @@ MonoBehaviour:
   vidaMaximaDoInimigo: 1
   vidaAtualDoInimigo: 0
   pontosParaDar: 5
+--- !u!1001 &526227082260766460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1653954863818834270, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_Name
+      value: Power-Up de Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8003144022783386166, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3190fed7022643a4ca1e38346b0382b7, type: 3}
+--- !u!1001 &8040571543543879331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7641648106295170124, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_Name
+      value: Power-Up de Vida
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7773120951659660932, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e04da8e7d463b24abb1378a4f1789ed, type: 3}
+--- !u!1001 &8851751147971949184
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481651623750181148, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061698073668135953, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
+      propertyPath: m_Name
+      value: Power-Up de Escudo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d86a19d311d1dec4c8ab6fadd0499f31, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1857,3 +2028,6 @@ SceneRoots:
   - {fileID: 1682440682}
   - {fileID: 910945772}
   - {fileID: 217620095}
+  - {fileID: 8851751147971949184}
+  - {fileID: 526227082260766460}
+  - {fileID: 8040571543543879331}
