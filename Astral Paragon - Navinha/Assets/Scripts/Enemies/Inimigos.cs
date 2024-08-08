@@ -6,6 +6,7 @@ public class Inimigos : MonoBehaviour
 {
     public GameObject laserDoInimigo;
     public Transform localDoDisparo;
+    public GameObject itemParaDropar;
 
     public float velocidadeDoInimigo;
     public float tempoMaximoEntreOsLasers;
@@ -16,6 +17,7 @@ public class Inimigos : MonoBehaviour
     public int vidaMaximaDoInimigo;
     public int vidaAtualDoInimigo;
     public int pontosParaDar;
+    public int chanceParaDropar;
 
 
     // Start is called before the first frame update
@@ -58,6 +60,14 @@ public class Inimigos : MonoBehaviour
         if (vidaAtualDoInimigo <= 0)
         {
             GameManager.instance.AumentarPontuacao(pontosParaDar);
+
+            int numeroAleatorio = Random.Range(0, 100);
+
+            if (numeroAleatorio <= chanceParaDropar)
+            {
+                Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
+            }
+
             Destroy(this.gameObject);
         }
     }
