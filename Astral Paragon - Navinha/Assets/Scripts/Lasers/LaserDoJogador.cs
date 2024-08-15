@@ -35,6 +35,8 @@ public class LaserDoJogador : MonoBehaviour
 
             Instantiate(LaserPlayerImpact, transform.position, transform.rotation);
 
+            AudioEffects.instance.LaserImpactSound.Play();
+
             Destroy(this.gameObject);
         }
     }
