@@ -75,6 +75,7 @@ public class Inimigos : MonoBehaviour
         {
             GameManager.instance.AumentarPontuacao(pontosParaDar);
             Instantiate(explosionEffect, transform.position, transform.rotation);
+            AudioEffects.instance.explosionSound.Play();
 
             int numeroAleatorio = Random.Range(0, 100);
 
@@ -93,6 +94,7 @@ public class Inimigos : MonoBehaviour
         {
             collisionInfo.gameObject.GetComponent<VidaDoPlayer>().MachucarJogador(ShipDamage);
             Instantiate(explosionEffect, transform.position, transform.rotation);
+            AudioEffects.instance.explosionSound.Play();
             Destroy(this.gameObject);
         }
     }
