@@ -9,6 +9,7 @@ public class Inimigos : MonoBehaviour
     public GameObject laserDoInimigo;
     public Transform localDoDisparo;
     public GameObject itemParaDropar;
+    public GameObject explosionEffect;
 
     public float velocidadeDoInimigo;
     public float tempoMaximoEntreOsLasers;
@@ -21,6 +22,7 @@ public class Inimigos : MonoBehaviour
     public int vidaAtualDoInimigo;
     public int pontosParaDar;
     public int chanceParaDropar;
+    public int ShipDamage;
 
     
 
@@ -72,6 +74,7 @@ public class Inimigos : MonoBehaviour
         if (vidaAtualDoInimigo <= 0)
         {
             GameManager.instance.AumentarPontuacao(pontosParaDar);
+            Instantiate(explosionEffect, transform.position, transform.rotation);
 
             int numeroAleatorio = Random.Range(0, 100);
 
@@ -80,6 +83,16 @@ public class Inimigos : MonoBehaviour
                 Instantiate(itemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
             }
 
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collisionInfo)
+    {
+        if (collisionInfo.gameObject.CompareTag("Player"))
+        {
+            collisionInfo.gameObject.GetComponent<VidaDoPlayer>().MachucarJogador(ShipDamage);
+            Instantiate(explosionEffect, transform.position, transform.rotation);
             Destroy(this.gameObject);
         }
     }
