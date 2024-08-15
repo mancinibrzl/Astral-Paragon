@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
                 Instantiate(laserDoJogador, localDoDisparoDaEsquerda.position, localDoDisparoDaEsquerda.rotation);
                 Instantiate(laserDoJogador, localDoDisparoDaDireita.position, localDoDisparoDaDireita.rotation);
             }
+            AudioEffects.instance.playerLaserSound.Play();
         }
     }
 
