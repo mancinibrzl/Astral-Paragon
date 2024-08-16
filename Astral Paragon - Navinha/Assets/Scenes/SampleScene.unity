@@ -681,7 +681,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fe19da938065742988c4fd97d0516c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameMusic: {fileID: 1781278261}
+  gameOverMusic: {fileID: 1495392056}
   textoDePontuacaoAtual: {fileID: 1549292147}
+  textoDePontuacaoFinal: {fileID: 61671187}
+  textoDeHighScore: {fileID: 713838829}
+  painelDeGameOver: {fileID: 2098128883}
   pontuacaoAtual: 0
 --- !u!4 &217620095
 Transform:
@@ -2885,7 +2890,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bf73645cfbb17e042b79c2ab9166665b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4048,7 +4053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2098128884
 RectTransform:
   m_ObjectHideFlags: 0
