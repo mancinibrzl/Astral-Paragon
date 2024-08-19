@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float tempoAtualDosLasersDuplos;
 
     public bool temLaserDuplo;
+    public bool playerIsAlive;
 
     private Vector2 teclasApertadas;
 
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         temLaserDuplo = false;
+        playerIsAlive = true;
         tempoAtualDosLasersDuplos = tempoMaximoDosLasersDuplos;
     }
 
@@ -29,7 +31,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         MovimentarJogador();
-        AtirarLaser();
+
+        if (playerIsAlive == true)
+        {
+            AtirarLaser();                
+        }
+
 
         if (temLaserDuplo == true)
         {

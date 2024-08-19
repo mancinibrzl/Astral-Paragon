@@ -77,6 +77,7 @@ public class VidaDoPlayer : MonoBehaviour
 
             if(vidaAtualDoJogador <= 0)
             {
+                FindObjectOfType<PlayerController>().playerIsAlive = false;
                 GameManager.instance.GameOver();
                 Debug.Log("Game Over");
             }
