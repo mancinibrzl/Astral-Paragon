@@ -147,7 +147,7 @@ MonoBehaviour:
   itemDeEscudo: 0
   itemDeLaserDuplo: 0
   itemDeVida: 1
-  vidaParaDar: 5
+  vidaParaDar: 7
 --- !u!114 &3563871601911914307
 MonoBehaviour:
   m_ObjectHideFlags: 0
